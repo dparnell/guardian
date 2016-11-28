@@ -22,13 +22,13 @@ defmodule Guardian do
   @default_algos ["HS512"]
   @default_token_type "access"
 
-  unless Application.get_env(:guardian, Guardian) do
-    raise "Guardian is not configured"
-  end
+  #unless Application.get_env(:guardian, Guardian) do
+  #  raise "Guardian is not configured"
+  #end
 
-  unless Keyword.get(Application.get_env(:guardian, Guardian), :serializer) do
-    raise "Guardian requires a serializer"
-  end
+  #unless Keyword.get(Application.get_env(:guardian, Guardian), :serializer) do
+  #  raise "Guardian requires a serializer"
+  #end
 
   @doc """
   Returns the current default token type.
